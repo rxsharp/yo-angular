@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/my/api/', {
+        templateUrl: 'views/myapi.html',
+        controller: 'MyapiCtrl',
+        controllerAs: 'myApi'
+      })
       .otherwise({
         redirectTo: '/'
       });
